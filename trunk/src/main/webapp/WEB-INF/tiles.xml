@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+      
+    <tiles-definitions>
+        <definition name="base.template" template="/WEB-INF/template/template.jsp">
+            <put-attribute name="title" value="" />
+            <put-attribute name="header" value="/WEB-INF/template/header.jsp" />
+            <put-attribute name="menu" value="/WEB-INF/template/menu.jsp" />
+            <put-attribute name="body" value="" />
+            <put-attribute name="footer" value="/WEB-INF/template/footer.jsp" />
+        </definition>
+ 
+        <definition name="clienti" extends="base.template">
+            <put-attribute name="title" value="Clienti Manager" />
+            <put-attribute name="body" value="/WEB-INF/pages/clienti.jsp" />
+        </definition>
+    
+        <definition name="impianti" extends="base.template">
+            <put-attribute name="title" value="Impianti Manager" />
+            <put-attribute name="body" value="/WEB-INF/pages/impianti.jsp" />
+        </definition>
+    
+        <definition name="tavoli" extends="base.template">
+            <put-attribute name="title" value="Tavoli Manager" />
+            <put-attribute name="body" value="/WEB-INF/pages/tavoli.jsp" />
+        </definition>
+    
+        <definition name="prenotazioni" extends="base.template">
+            <put-attribute name="title" value="Prenotazioni Manager" />
+            <put-attribute name="body" value="/WEB-INF/pages/prenotazioni.jsp" />
+        </definition>
+ 
+    </tiles-definitions>
